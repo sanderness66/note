@@ -1,0 +1,46 @@
+.TH note 1 17-JUN-2021 GO
+
+.SH NAME
+note \- print out the note for guitar string/fret pairs, or vice versa
+
+.SH SYNOPSIS
+.B note
+string/fret ...
+
+.B note
+note ...
+
+.SH DESCRIPTION
+.B note
+finds either the note corresponding to a string/fret pair, or prints
+all the string/fret pairs that will produce a give note.
+
+.SH EXAMPLES
+.EX
+$ note e
+E = 1 / 0
+E = 2 / 5
+E = 3 / 9
+E = 4 / 2
+E = 5 / 7
+E = 6 / 0
+.EE
+
+.EX
+$ note 6/0
+6 / 0 = E
+.EE
+
+.SH FILES
+None.
+
+.SH SEE ALSO
+None.
+
+.SH BUGS
+There is absolutely no checking for valid inputs anywhere at all in
+the code.
+
+.SH OWNER
+svm
+
